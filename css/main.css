@@ -1,5 +1,5 @@
 :root{
-      --green: #68E0CF;
+      --green: #4deeea;
       --black: #373B40;
       --github: #333333;
       --twitter: #1da1f2;
@@ -8,13 +8,18 @@
       --mail: #ff0000;
       --codepen: #333333;
       --cv: white;
+      --html5: #f06529;
+      --css3: #2965f1;
+      --js: #f0db4f;
+      --git: #F03C2E;
+      --wordpress: #00749A;
 }
 body{
       width: 100%;
       min-height: 100vh;
       background-color: var(--black);
       display: grid;
-      grid-template-columns: 30% 65% 5%;
+      grid-template-columns: 40% 55% 5%;
 }
 .personal-infos-container{
       display: flex;
@@ -23,8 +28,8 @@ body{
       flex-direction: column;
 }
 .personal-infos-container img{
-      width: 328px;
-      height: 328px;
+      width: 320px;
+      height: 320px;
       border-radius: 50%;
       border: 4px solid var(--green);
       padding: 32px;
@@ -58,7 +63,7 @@ body{
 .personal-infos-container .content h4::after{
       content: "";
       display: inline-block;
-      width: 16px;
+      width: 50%;
       height: 4px;
       margin-top: 1vh;
       background-color: var(--green);
@@ -111,4 +116,60 @@ body{
 }
 .cv:hover a i{
       color: var(--cv);
+}
+.about-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.about-container .name{
+      font-size: 48px;
+      color: var(--green);
+      font-weight: bold;
+}
+.about-container .job-title{
+      font-size: 24px;
+      color: white;
+}
+.about-container .introduction{
+      margin-top: 5vh;
+      font-size: 20px;
+      color: white;
+      max-width: 70%;
+}
+.about-container .technologies{
+      margin-top: 5vh;
+      width: 70%;
+      font-size: 20px;
+      color: white;
+}
+.about-container .technologies .icons{
+      display: flex;
+      align-items: center;
+      margin-top: 2vh;
+}
+.about-container .technologies .icons div{
+      margin-right: 1em;
+      cursor: pointer;
+}
+.about-container .technologies .icons div i{
+      font-size: 40px;
+      color: var(--green);
+      transition: 0.5s all ease;
+}
+.about-container .technologies .icons .html:hover i{
+      color: var(--html5);
+}
+.about-container .technologies .icons .css:hover i {
+      color: var(--css3);
+}
+.about-container .technologies .icons .js:hover i{
+      color: var(--js);
+}
+.about-container .technologies .icons .git:hover i{
+      color: var(--git);
+}
+.about-container .technologies .icons .wordpress:hover i{
+      color: var(--wordpress);
 }
