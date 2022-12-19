@@ -1,13 +1,13 @@
 :root{
       --orange: #EB984E;
       --black: #373B40;
-      --github: ;
-      --twitter: ;
+      --github: #333333;
+      --twitter: #1da1f2;
       --linkedin: #0077B5;
-      --medium: ;
-      --mail: ;
-      --codepen: ;
-      --cv: ;
+      --medium: white;
+      --mail: #ff0000;
+      --codepen: #333333;
+      --cv: white;
 }
 body{
       width: 100%;
@@ -59,5 +59,26 @@ body{
 .social-media-container div a i{
       font-size: 32px;
       color: var(--orange);
-      transition: 0.5s all ease;
+      transition: 0.3s all ease;
+}
+.github:hover a i{
+      color: var(--github);
+}
+.twitter:hover a i{
+      color: var(--twitter);
+}
+.linkedin:hover a i{
+      color: var(--linkedin);
+}
+.medium:hover a i{
+      color: var(--medium);
+}
+.mail:hover a i{
+      color: var(--mail);
+}
+.codepen:hover a i{
+      color: var(--codepen);
+}
+.cv:hover a i{
+      color: var(--cv);
 }
