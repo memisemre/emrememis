@@ -1,5 +1,5 @@
 :root{
-      --orange: #EB984E;
+      --green: #68E0CF;
       --black: #373B40;
       --github: #333333;
       --twitter: #1da1f2;
@@ -14,37 +14,67 @@ body{
       min-height: 100vh;
       background-color: var(--black);
       display: grid;
-      grid-template-columns: 45% 50% 5%;
+      grid-template-columns: 30% 65% 5%;
 }
-.image-container{
-      display: flex;
-      align-items: center;
-      position: relative;
-}
-.image-container img{
-      width: 100%;
-      height: 100vh;
-      filter: grayscale(100%);
-}
-.name-container{
-      position: absolute;
-      top: calc(50% - 128px);
-      left: calc(45% - 128px);
-      background-color: var(--black);
-      width: 256px;
-      height: 256px;
-      border-radius: 50%;
+.personal-infos-container{
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
 }
-.name-container h1{
+.personal-infos-container img{
+      width: 328px;
+      height: 328px;
+      border-radius: 50%;
+      border: 4px solid var(--green);
+      padding: 32px;
+}
+.personal-infos-container .content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vh;
+      width: 100%;
+      height: 10vh;
+}
+.personal-infos-container .content div{
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
       color: white;
-      font-size: 48px;
-      text-align: center;
+      font-weight: normal;
+      cursor: pointer;
+}
+.personal-infos-container .content h4{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: normal;
+}
+.personal-infos-container .content h4::after{
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 4px;
+      margin-top: 1vh;
+      background-color: var(--green);
+      border-radius: 16px;
+      transition: 0.5s all ease;
+}
+.personal-infos-container .content div p {
+      color: var(--green);
+      margin-top: 1vh;
+      font-weight: bold;
+}
+.personal-infos-container .content div:hover h4::after{
+      width: 100%;
 }
 .social-media-container{
-      border-left: 2px solid var(--orange);
+      border-left: 2px solid var(--green);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,7 +88,7 @@ body{
 }
 .social-media-container div a i{
       font-size: 32px;
-      color: var(--orange);
+      color: var(--green);
       transition: 0.3s all ease;
 }
 .github:hover a i{
