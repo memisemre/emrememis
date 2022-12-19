@@ -1,0 +1,63 @@
+:root{
+      --orange: #EB984E;
+      --black: #373B40;
+      --github: ;
+      --twitter: ;
+      --linkedin: #0077B5;
+      --medium: ;
+      --mail: ;
+      --codepen: ;
+      --cv: ;
+}
+body{
+      width: 100%;
+      min-height: 100vh;
+      background-color: var(--black);
+      display: grid;
+      grid-template-columns: 45% 50% 5%;
+}
+.image-container{
+      display: flex;
+      align-items: center;
+      position: relative;
+}
+.image-container img{
+      width: 100%;
+      height: 100vh;
+      filter: grayscale(100%);
+}
+.name-container{
+      position: absolute;
+      top: calc(50% - 128px);
+      left: calc(45% - 128px);
+      background-color: var(--black);
+      width: 256px;
+      height: 256px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.name-container h1{
+      color: white;
+      font-size: 48px;
+      text-align: center;
+}
+.social-media-container{
+      border-left: 2px solid var(--orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+.social-media-container div{
+      margin-top: 3vh;
+}
+.social-media-container div:first-child{
+      margin-top: 0;
+}
+.social-media-container div a i{
+      font-size: 32px;
+      color: var(--orange);
+      transition: 0.5s all ease;
+}
