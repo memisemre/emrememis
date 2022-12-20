@@ -188,7 +188,7 @@ body{
 }
 .about-container .technologies{
       margin-top: 5vh;
-      width: 70%;
+      width: 80%;
       font-size: 20px;
       color: white;
 }
@@ -246,5 +246,36 @@ body{
       .personal-infos-container .img-container::before{
             height: 240px;
             width: 200px;
+      }
+}
+@media screen and (max-width: 750px){
+      body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+      }
+      .social-media-container{
+            flex-direction: row;
+            margin-top: 3vh;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid var(--green);
+            padding-bottom: 2vh;
+      }
+      .social-media-container div{
+            margin-right: 5%;
+            margin-top: 0;
+      }
+      .about-container{
+            margin-top: 2vh;
+      }
+      .personal-infos-container {
+            margin-top: 2vh;
+      }
+      .personal-infos-container .content{
+            flex-direction: row;
+      }
+      .personal-infos-container .content div{
+            width: 40%;
       }
 }
