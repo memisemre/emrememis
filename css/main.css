@@ -19,7 +19,7 @@ body{
       height: 100vh;
       background-color: var(--black);
       display: grid;
-      grid-template-columns: 40% 55% 5%;
+      grid-template-columns: 5% 55% 40%;
 }
 .login-animation-container{
       position: absolute;
@@ -125,7 +125,7 @@ body{
       width: 100%;
 }
 .social-media-container{
-      border-left: 2px solid var(--green);
+      border-right: 2px solid var(--green);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -184,7 +184,7 @@ body{
       margin-top: 5vh;
       font-size: 20px;
       color: white;
-      max-width: 70%;
+      max-width: 80%;
 }
 .about-container .technologies{
       margin-top: 5vh;
@@ -220,4 +220,31 @@ body{
 }
 .about-container .technologies .icons .wordpress:hover i{
       color: var(--wordpress);
+}
+@media screen and (max-width: 1350px){
+      .social-media-container div a i,
+      .about-container .technologies .icons div i{
+            font-size: 24px;
+      }
+}
+@media screen and (max-width: 900px){
+      .personal-infos-container .content{
+            flex-direction: column;
+            height: auto;
+      }
+      .personal-infos-container .content div{
+            margin-top: 3vh;
+      }
+
+}
+@media screen and (max-width: 800px){
+      .personal-infos-container .img-container img{
+            width: 240px;
+            height: 240px;
+            padding: 48px;
+      }
+      .personal-infos-container .img-container::before{
+            height: 240px;
+            width: 200px;
+      }
 }
