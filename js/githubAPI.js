@@ -11,9 +11,6 @@ export function githubAPI(){
       fetch("https://api.github.com/users/memisemre/repos")
       .then(res=>res.json())
       .then((res)=>{
-            res.forEach((repo)=>{
-                  stars = stars + repo.stargazers_count;
-                  select(SELECTORS.GITHUB_STARS).innerHTML = `${stars}`;
-            })
+            select(SELECTORS.GITHUB_STARS).innerHTML = `${res.reduce((arr,repo)=>arr + repo.stargazers_count , 0)}`;
       })
 }
